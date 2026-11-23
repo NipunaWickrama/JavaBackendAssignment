@@ -15,6 +15,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.system.CapturedOutput;
 import org.springframework.boot.test.system.OutputCaptureExtension;
+import org.springframework.lang.NonNull;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -126,7 +127,7 @@ class RequestLoggingTest {
         }
 
         @Override
-        public String[] getParameterValues(String name) {
+        public String[] getParameterValues(@NonNull String name) {
             throw new IllegalStateException(
                     "Character decoding failed. Parameter [name] with value [" + INVALID_SECRET_NAME + "]");
         }

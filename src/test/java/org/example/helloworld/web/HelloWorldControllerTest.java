@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
+import org.springframework.lang.NonNull;
 import org.springframework.test.json.JsonCompareMode;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
@@ -173,7 +174,7 @@ class HelloWorldControllerTest {
         }
 
         @Override
-        public String[] getParameterValues(String name) {
+        public String[] getParameterValues(@NonNull String name) {
             throw new IllegalStateException("Character decoding failed");
         }
     }

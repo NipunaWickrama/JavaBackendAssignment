@@ -36,7 +36,7 @@ public class HelloWorldController {
                     Returns a greeting when the first letter of `name` is A–M (case-insensitive). \
                     Surrounding whitespace is trimmed and only the first letter is upper-cased.""",
             parameters = @Parameter(
-                    name = NAME_PARAM, in = ParameterIn.QUERY, required = false,
+                    name = NAME_PARAM, in = ParameterIn.QUERY,
                     description = """
                             Name to greet. Must start with an English letter A–M, be at most 100 \
                             characters after trimming, and appear only once.""",
