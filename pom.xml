@@ -32,6 +32,9 @@
         <jackson-bom.version>2.21.8</jackson-bom.version>
         <log4j2.version>2.25.5</log4j2.version>
         <commons-lang3.version>3.22.0</commons-lang3.version>
+        <logback.version>1.5.38</logback.version>
+        <hibernate-validator.version>8.0.6.Final</hibernate-validator.version>
+        <json-smart.version>2.6.1</json-smart.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
