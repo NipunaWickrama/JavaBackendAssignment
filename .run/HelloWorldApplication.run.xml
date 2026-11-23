@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <!--
+    Shared IntelliJ IDEA run configuration. INCLUDE_PROVIDED_SCOPE puts the "provided"
+    spring-boot-starter-tomcat dependency on the classpath so the embedded server starts.
+  -->
+  <configuration default="false" name="HelloWorldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="assignment" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.helloworld.HelloWorldApplication" />
+    <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
