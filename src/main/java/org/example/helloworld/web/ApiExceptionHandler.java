@@ -19,6 +19,8 @@ public class ApiExceptionHandler {
 
     private static final Logger log = LoggerFactory.getLogger(ApiExceptionHandler.class);
 
+    // Called by Spring (via @ExceptionHandler), never directly, so IntelliJ reports it as unused.
+    @SuppressWarnings("unused")
     @ExceptionHandler(InvalidNameException.class)
     public ResponseEntity<ErrorResponse> handleInvalidName(InvalidNameException ex) {
         // Logged at INFO without a stack trace: a 400 is a normal client mistake, not a server
