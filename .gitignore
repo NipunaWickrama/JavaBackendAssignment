@@ -37,3 +37,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+### Local Tomcat installation (not part of the project) ###
+tomcat/
+
+### Postman app local sync files (the collection is postman/HelloWorldAPI.postman_collection.json) ###
+.postman/
+postman/globals/
+postman/collections/
